@@ -1,0 +1,2023 @@
+{
+  "request": "/v1/Engine/AXE/Assertions",
+  "statusCode": "SUCCESS",
+  "statusMessage": "",
+  "arcAccountCode": "e6e68581-d22a-4b0d-af5f-2b380b805430",
+  "result": [
+    {
+      "id": 267,
+      "engineKey": "ARC",
+      "assertionKey": "abbrMissingTitle",
+      "title": "abbr without title",
+      "description": "The abbr element lacks a title=... attribute or has an empty title=. The meaning of the abbreviation is not correctly defined or exposed to users.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 268,
+      "engineKey": "ARC",
+      "assertionKey": "accessKeyUsedMultipleTimes",
+      "title": "multiple uses of same accesskey",
+      "description": "The same accesskey=... attribute has been used multiple times in the page. Generally, only the first control with the same accesskey=... will be triggered. This will likely result in unforeseen/incorrect keyboard behavior.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 269,
+      "engineKey": "ARC",
+      "assertionKey": "activeSvgMissingAriaLabel",
+      "title": "active svg without aria-label",
+      "description": "The svg is active/actionable (for instance, part of a button or control), but it is missing an aria-label=.... If it acts as the only label/visible icon for a control, ensure there is alternative text present.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 270,
+      "engineKey": "ARC",
+      "assertionKey": "altAttributeOnSvgElement",
+      "title": "alt attribute on svg",
+      "description": "The svg has an alt=... attribute. This is an invalid/incorrect way of providing text alternatives for svg images.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 271,
+      "engineKey": "ARC",
+      "assertionKey": "altTextIsAllWhitespace",
+      "title": "image with alt containing only white space",
+      "description": "The img has an `alt=\"...\" attribute containing only whitespace. As a result, the meaning/purpose of the image won't be conveyed to users who can't see the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 272,
+      "engineKey": "ARC",
+      "assertionKey": "altTextIsAllWhitespaceInput",
+      "title": "image type input with empty alt",
+      "description": "The input type=image has an empty alt= attribute or an `alt=\"...\" containing only whitespace. As a result, the input lacks an accessible name.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 273,
+      "engineKey": "ARC",
+      "assertionKey": "ariaExpandedOnInvalidRole",
+      "title": "control with inappropriate aria-expanded",
+      "description": "The aria-expanded attribute is only allowed on particular controls / elements with a particular role=.... In general, it is used on the control that triggers the expand/collapse behavior, and not on the content that is expanded/collapsed.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 274,
+      "engineKey": "ARC",
+      "assertionKey": "ARIAHiddenUsedOnFocusable",
+      "title": "aria-hidden on focusable element",
+      "description": "aria-hidden=true is used on a focusable element. Assistive technology users that navigate to / focus on this element will not be able to determine what their focus is currently on.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 275,
+      "engineKey": "ARC",
+      "assertionKey": "ariaLabelledbyOnNonInteractiveElement",
+      "title": "inappropriate use of aria-labelledby=...",
+      "description": "The aria-labelledby=... attribute only makes sense, and is only correctly exposed to assistive technologies, on specific elements such as interactive controls or elements with a particular role=.... When used on other elements which traditionally don't have a name/label, the content of the element referenced byaria-labelledby=... is not consistently announced by assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 276,
+      "engineKey": "ARC",
+      "assertionKey": "ariaLabelOnNonInteractiveElement",
+      "title": "inappropriate use of aria-label=...",
+      "description": "The aria-label=... attribute only makes sense, and is only correctly exposed to assistive technologies, on specific elements such as interactive controls or elements with a particular role=.... When used on other elements which traditionally don't have a name/label, the aria-label=... value is not consistently announced by assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 277,
+      "engineKey": "ARC",
+      "assertionKey": "badAriaAttribute",
+      "title": "invalid ARIA attribute",
+      "description": "The element uses an invalid ARIA attribute. No information about this attribute will be conveyed by assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 278,
+      "engineKey": "ARC",
+      "assertionKey": "badAriaRole",
+      "title": "invalid ARIA role=...",
+      "description": "The element uses an invalid ARIA role=... attribute. No information about the element's role/purpose will be conveyed by assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 279,
+      "engineKey": "ARC",
+      "assertionKey": "badLongdesc",
+      "title": "invalid longdesc value",
+      "description": "The longdesc=... attribute on the image is empty or contains a space, indicating that it's either invalid or unnecessary.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 280,
+      "engineKey": "ARC",
+      "assertionKey": "duplicateForAndId",
+      "title": "duplicate id attributes",
+      "description": "The id attribute values used on the page must be unique. Having duplicate id values can lead to problems when other elements reference that id value (e.g. to establish an aria-labelledby=... reference on a form control).",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 281,
+      "engineKey": "ARC",
+      "assertionKey": "duplicateLabelsUsed",
+      "title": "duplicate label text",
+      "description": "The form contains multiple label elements with the same text content. Ensure that there is sufficient structure (such as additional fieldset/legend groupings, or additional descriptions associated with form controls) to disambiguate the form fields.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.6 Headings and Labels"
+      ]
+    },
+    {
+      "id": 282,
+      "engineKey": "ARC",
+      "assertionKey": "emptyAltInput",
+      "title": "image input with empty alt",
+      "description": "The input type=image lacks an appropriate text alternative using the alt=... attribute.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 283,
+      "engineKey": "ARC",
+      "assertionKey": "emptyAltWithTitle",
+      "title": "img with empty alt but with title",
+      "description": "The img has an empty alt= attribute, but does have a title=... attribute.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 284,
+      "engineKey": "ARC",
+      "assertionKey": "emptyAltWtihARIALabel",
+      "title": "img with empty alt but with aria-label",
+      "description": "The img has an empty alt= attribute, but does have an aria-label=... attribute.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 285,
+      "engineKey": "ARC",
+      "assertionKey": "emptyFrameTitle",
+      "title": "frame with empty title",
+      "description": "The frame uses an empty title= attribute. As a result, the frame's purpose is not appropriately communicated to users of assistive technologies. If the frame is not intended to be navigated by users (e.g. it only serves to \"hold\" additional scripts), explicitly title it as \"empty\".",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 286,
+      "engineKey": "ARC",
+      "assertionKey": "emptyLabelText",
+      "title": "form control with empty label",
+      "description": "The label associated with the form control is empty. As a result, the form control lacks an accessible name.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 287,
+      "engineKey": "ARC",
+      "assertionKey": "emptyLangOnHTML",
+      "title": "empty lang attribute",
+      "description": "The page has an empty lang= attribute on the html element, and doesn't specify the default/overall human language of the content. Assistive technologies may not read/announce the content correctly.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.1.1 Language of Page"
+      ]
+    },
+    {
+      "id": 288,
+      "engineKey": "ARC",
+      "assertionKey": "hotSpotWithEmptyAlt",
+      "title": "image map area with empty alt",
+      "description": "The client-side image map area hot spots have empty alt= attributes. They won't convey their meaning/purpose to users who can't see the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 289,
+      "engineKey": "ARC",
+      "assertionKey": "hotSpotWithNoAlt",
+      "title": "image map area without alt",
+      "description": "The client-side image map area hot spots are missing alt=... attributes. They won't convey their meaning/purpose to users who can't see the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 290,
+      "engineKey": "ARC",
+      "assertionKey": "iframeNoTitle",
+      "title": "iframe without title",
+      "description": "The iframe is missing the title=... attribute. As a result, the iframe's purpose is not appropriately communicated to users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 291,
+      "engineKey": "ARC",
+      "assertionKey": "imgWithAriaDescribedBy",
+      "title": "image with aria-describedby but no alt",
+      "description": "The img element has an empty or missing alt= attribute, but has aria-describedby. The meaning/purpose of the image may not be conveyed correctly to users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 292,
+      "engineKey": "ARC",
+      "assertionKey": "inputNoAccessibleName",
+      "title": "form control without visible label text",
+      "description": "The form control has no visible label text. Users may not understand the purpose of the control or what type of input is expected.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 293,
+      "engineKey": "ARC",
+      "assertionKey": "inputNoAccessibleNameUseAlt",
+      "title": "button containing img without alt",
+      "description": "The button uses an image that has no text alternative using the alt=... attribute. As a result, the button lacks an accessible name / label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 294,
+      "engineKey": "ARC",
+      "assertionKey": "invalidARIALabelledbyID",
+      "title": "invalid aria-labelledby=... value",
+      "description": "The element's aria-labelledby=... attribute is pointing to an invalid or non-existent id. This will result in the element's accessible name (exposed by assistive technologies) to be empty, meaning the element won't be correctly announced.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 295,
+      "engineKey": "ARC",
+      "assertionKey": "invalidAttrOnRadioButton",
+      "title": "aria-invalid on radio button",
+      "description": "The aria-invalid attribute is set on an input type=radio radio button. This is incorrect, as radio buttons cannot be invalid.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.3 Error Suggestion"
+      ]
+    },
+    {
+      "id": 296,
+      "engineKey": "ARC",
+      "assertionKey": "invalidTitleChars",
+      "title": "special characters in page title",
+      "description": "The page's title element contains special characters, such as ~ or ^. These characters will, depending on the user's verbosity settings, be announced literally (e.g. \"tilde\", \"caret\") by assistive technologies, leading to potential confusion.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.2 Page Titled"
+      ]
+    },
+    {
+      "id": 297,
+      "engineKey": "ARC",
+      "assertionKey": "labelHiddenWithAriaHidden",
+      "title": "label hidden with aria-hidden",
+      "description": "The form control uses a label element, but the label is hidden from assistive technologies using aria-hidden=true. This leaves the form control without an accessible name / programmatic label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 298,
+      "engineKey": "ARC",
+      "assertionKey": "labelHiddenWithDisplayNone",
+      "title": "label hidden with display:none",
+      "description": "The form control uses a label element, but the label is visually hidden in CSS with display:none, which also hides it from assistive technologies. This leaves the form control without an accessible name / programmatic label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 299,
+      "engineKey": "ARC",
+      "assertionKey": "labelHiddenWithVisibilityHidden",
+      "title": "label hidden with visibility:hidden",
+      "description": "The form control uses a label element, but the label is visually hidden in CSS with visibility:hidden, which also hides it from assistive technologies. This leaves the form control without an accessible name / programmatic label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 300,
+      "engineKey": "ARC",
+      "assertionKey": "labelParentHiddenWithAriaHidden",
+      "title": "label inside parent element hidden with aria-hidden",
+      "description": "The form control uses a label element, but the parent element of the label is hidden from assistive technologies using aria-hidden=true. This leaves the form control without an accessible name / programmatic label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 301,
+      "engineKey": "ARC",
+      "assertionKey": "labelParentHiddenWithDisplayNone",
+      "title": "label inside parent element hidden with display:none",
+      "description": "The form control uses a label element, but the parent element of the label is visually hidden in CSS with display:none, which also hides it from assistive technologies. This leaves the form control without an accessible name / programmatic label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 302,
+      "engineKey": "ARC",
+      "assertionKey": "langNotDefinedOnHTML",
+      "title": "lang for document not defined",
+      "description": "The page lacks a lang=... attribute on the html element to specify the default/overall human language of the content. Assistive technologies may not read/announce the content correctly.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.1.1 Language of Page"
+      ]
+    },
+    {
+      "id": 303,
+      "engineKey": "ARC",
+      "assertionKey": "legendEmpty",
+      "title": "empty legend",
+      "description": "The legend element has no text. As such, it won't provide any meaningful group label for the controls in the fieldset.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.2 Labels or Instructions"
+      ]
+    },
+    {
+      "id": 304,
+      "engineKey": "ARC",
+      "assertionKey": "listItemHasNoListParent",
+      "title": "orphaned list items",
+      "description": "li list item elements lack an appropriate ol ordered list or ul unordered list parent element. This is invalid markup, and assistive technologies won't correctly announce these as list items.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 305,
+      "engineKey": "ARC",
+      "assertionKey": "longdescWithEmptyAlt",
+      "title": "image with longdesc but empty alt",
+      "description": "The img element has an empty alt= attribute, but has a longdesc=.... The meaning/purpose of the image may not be conveyed to users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 306,
+      "engineKey": "ARC",
+      "assertionKey": "longdescWithNoAlt",
+      "title": "image with longdesc but no alt",
+      "description": "The img element lacks an alt=... attribute, but has a  longdesc=.... The meaning/purpose of the image may not be conveyed to users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 307,
+      "engineKey": "ARC",
+      "assertionKey": "missingLinkAltAttribute",
+      "title": "link with image lacking alt",
+      "description": "The image in the link lacks an appropriate alt=... attribute. As a result, the link lacks an accessible name to convey its destination or purpose to users who cannot perceive the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 308,
+      "engineKey": "ARC",
+      "assertionKey": "missingTableHeaders",
+      "title": "missing table headers",
+      "description": "The table appears to be a data table, but it is missing any th column or row headers.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 309,
+      "engineKey": "ARC",
+      "assertionKey": "multipleFormLabelsUsed",
+      "title": "multiple label elements used",
+      "description": "There are multiple label elements that reference the same form control. Assistive technologies may not consistently announce the correct/intended order of the various labels.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 310,
+      "engineKey": "ARC",
+      "assertionKey": "multipleLegendElements",
+      "title": "fieldset with mutiple legend elements",
+      "description": "The fieldset contains more than one legend element. This is invalid and will likely result in inconsistent/incorrect announcement by assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.2 Labels or Instructions"
+      ]
+    },
+    {
+      "id": 311,
+      "engineKey": "ARC",
+      "assertionKey": "multipleMainLandmarks",
+      "title": "multiple main landmarks",
+      "description": "The page contains more than one role=main ARIA landmark or main structural HTML element.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 312,
+      "engineKey": "ARC",
+      "assertionKey": "noAlt",
+      "title": "image lacking alt attribute",
+      "description": "The img element lacks an alt=... attribute. As a result, the meaning/purpose of the image won't be conveyed to users who can't see the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 313,
+      "engineKey": "ARC",
+      "assertionKey": "noAriaLevelOnRoleHeading",
+      "title": "role=heading without aria-level",
+      "description": "The heading specified using role=heading lacks an explicit aria-level=... attribute to define its heading level. Assistive technologies won't be able to appropriately communicate the heading's hierarchical level.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 314,
+      "engineKey": "ARC",
+      "assertionKey": "noButtonText",
+      "title": "button without accessible name",
+      "description": "The button element lacks a programmatic name - text content, an explicit aria-label=..., or similar. The purpose of the button will not be available to users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 315,
+      "engineKey": "ARC",
+      "assertionKey": "noBypassAvailable",
+      "title": "no bypass available",
+      "description": "No method is skipping blocks of content / navigating directly to the main content of the page was provided.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 316,
+      "engineKey": "ARC",
+      "assertionKey": "noDoctype",
+      "title": "missing !DOCTYPE",
+      "description": "The page is missing an appropriate !DOCTYPE declaration.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 317,
+      "engineKey": "ARC",
+      "assertionKey": "noH1",
+      "title": "no h1 heading",
+      "description": "The page lacks a primary h1 heading. Ideally, each page should have an h1 heading at the start of the main page content. The heading text should describe the main page content, and should generally match the page title.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 318,
+      "engineKey": "ARC",
+      "assertionKey": "noHeadingsOnPage",
+      "title": "no headings present",
+      "description": "The page does not contain any headings. If text/content acting as a heading is present, ensure that appropriate markup (such as h1 - h6 heading elements, or elements with role=heading and an appropriate aria-level=...) is used to provide structure.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 319,
+      "engineKey": "ARC",
+      "assertionKey": "noHeadingText",
+      "title": "empty headings",
+      "description": "The heading is empty / lacks content. This can be confusing for users of assistive technologies, who may not be able to understand the overall structure and hierarchy of the content.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 320,
+      "engineKey": "ARC",
+      "assertionKey": "noImageRole",
+      "title": "svg without explicit role=img",
+      "description": "The svg acts as an image, but is missing and explicit role = img.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 321,
+      "engineKey": "ARC",
+      "assertionKey": "noLinkText",
+      "title": "link without link text",
+      "description": "The link lacks any actual link text. As a result, the link lacks an accessible name to convey its destination or purpose to users, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 322,
+      "engineKey": "ARC",
+      "assertionKey": "noModalTitle",
+      "title": "modal dialog lacks programmatic title",
+      "description": "The modal dialog lacks a programmatically defined/associated title (for instance, using aria-label=... or aria-labelledby=...).",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 323,
+      "engineKey": "ARC",
+      "assertionKey": "nonActiveElementInTabOrder",
+      "title": "non-interactive focusable element",
+      "description": "The element has been made explicitly focusable using the tabindex=... attribute, but lacks a specific role=.... This may indicate that it's a non-interactive/content element, which should not receive focus by default, or an interactive control lacking an appropriate role=....",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 324,
+      "engineKey": "ARC",
+      "assertionKey": "nonLayoutTableHasNestedTable",
+      "title": "nested table",
+      "description": "The table contains another nested table. This can be problematic for content order (if table content does not linearize correctly when read sequentially by assistive technologies), or it may indicate the use of nested layout tables.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 325,
+      "engineKey": "ARC",
+      "assertionKey": "noTitleSVG",
+      "title": "svg without title",
+      "description": "The svg lacks an accessible name / text alternative using the title element.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 326,
+      "engineKey": "ARC",
+      "assertionKey": "nullValueOnInput",
+      "title": "empty value attribute on submit/reset input",
+      "description": "input type=submit or input type=reset with an empty value=... attribute found - it must either be non-empty or unspecified, as in the absence of any other labels (such as aria-label) it results in the control having an empty accessible name.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 327,
+      "engineKey": "ARC",
+      "assertionKey": "pageHasAutoRefresh",
+      "title": "page auto-refreshes",
+      "description": "The page is automatically reloaded/refreshed using a meta http-equiv=refresh ... directive. This can be confusing for most users, and particularly users of assistive technologies. The page may reload/refresh before users had a chance to fully read/interact with the page.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.2.1 Timing Adjustable"
+      ]
+    },
+    {
+      "id": 328,
+      "engineKey": "ARC",
+      "assertionKey": "pageHasDelayedRedirect",
+      "title": "page has delayed redirect",
+      "description": "The page uses a delayed redirect using meta http-equiv=refresh .... This can be confusing for most users, and particularly users of assistive technologies. The page may redirect just as users start to read/interact with the page.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.2.1 Timing Adjustable"
+      ]
+    },
+    {
+      "id": 329,
+      "engineKey": "ARC",
+      "assertionKey": "pageTitleHasUntitled",
+      "title": "page title contains generic placeholder text",
+      "description": "The page's title element contains text usually used as generic placeholder text, such as \"untitled\" or what appears to be just a file name. It's likely that this title is incorrect and does not reflect the content/purpose of the page.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.2 Page Titled"
+      ]
+    },
+    {
+      "id": 330,
+      "engineKey": "ARC",
+      "assertionKey": "pageTitleIsEmpty",
+      "title": "empty or missing page title",
+      "description": "The page's title element is either missing or empty. As a result, the page won't be correctly announced to users of assistive technologies (for instance, when the page is loaded, or when the user switches to a tab in the browser that contains the page). As a fallback, assistive technologies may announce the actual URL and/or filename of the page instead.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.2 Page Titled"
+      ]
+    },
+    {
+      "id": 331,
+      "engineKey": "ARC",
+      "assertionKey": "placeholderUsedForLabel",
+      "title": "form control using placeholder as label",
+      "description": "The form control only uses placeholder=... to provide a visible label. This placeholder=... text disappears once users enter information or if the field is already filled with a value, leaving the form control without any visible label text.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.6 Headings and Labels"
+      ]
+    },
+    {
+      "id": 332,
+      "engineKey": "ARC",
+      "assertionKey": "pseudoContent",
+      "title": "CSS generated content",
+      "description": "Content is injected into the page using the CSS content: ... property. This content may not be announced by older browser/assistive technology combinations, and it will be absent if stylesheets are not loaded or overridden by the user.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 333,
+      "engineKey": "ARC",
+      "assertionKey": "requiredAttrOnRadioButton",
+      "title": "aria-required / required on radio button",
+      "description": "The aria-required attribute or HTML required attribute are used on a radio button.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.2 Labels or Instructions"
+      ]
+    },
+    {
+      "id": 334,
+      "engineKey": "ARC",
+      "assertionKey": "requiredNotSemanticallyDefined",
+      "title": "required form control not programmatically identified",
+      "description": "The label associated with the form control contains the * character, indicating that this is likely a required field. If this is the case, the field should be programmatically identified as such using the required or aria-required=true attributes.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 335,
+      "engineKey": "ARC",
+      "assertionKey": "rolePresentationOnTableWithDataElements",
+      "title": "data table with role=presentation",
+      "description": "The table contains structural markup (such as th header cells or a summary element) indicating that it's a data table, but its semantics are neutralized using role=presentation. Assistive technologies will treat the table as a layout table, and suppress announcement of any structural data relationships.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 336,
+      "engineKey": "ARC",
+      "assertionKey": "svgMissingAriaLabelledby",
+      "title": "svg without aria-labelledby",
+      "description": "The svg lacks an aria-labelledby=... attribute pointing to an element acting as label.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 337,
+      "engineKey": "ARC",
+      "assertionKey": "tabindexGreaterThanZero",
+      "title": "tabindex with value greater than zero",
+      "description": "tabindex=... with a value greater than zero should generally not be used, as it forces a specific tab order for keyboard navigation. Ensure that the page has an appropriate, logical tab order.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.3 Focus Order"
+      ]
+    },
+    {
+      "id": 338,
+      "engineKey": "ARC",
+      "assertionKey": "tableCellHaScope",
+      "title": "td data cells with scope",
+      "description": "Found one or more td elements with a scope=... attribute. This indicates that these cells are likely used as headers, but are inappropriately marked up as data cells.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 339,
+      "engineKey": "ARC",
+      "assertionKey": "tableHeaderMissingScope",
+      "title": "th table headers without scope",
+      "description": "The th data table header cells have no scope=... attributes defined. Some older assistive technologies may not interpret the relationship between the headers and data cells correctly.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 340,
+      "engineKey": "ARC",
+      "assertionKey": "targetLinkDoesNotExist",
+      "title": "skip link to non-existent target",
+      "description": "The page has a \"skip\" link, but it points to a non-existent id or anchor. As a result, the skip link won't work correctly as a means to bypass blocks of content.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 341,
+      "engineKey": "ARC",
+      "assertionKey": "targetNotFocusable",
+      "title": "skip link target not focusable",
+      "description": "The \"skip\" link points to a target/element which is not focusable (manually or programmatically) by default. This can cause problems in certain browsers, such as Internet Explorer.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 342,
+      "engineKey": "ARC",
+      "assertionKey": "usingAbstractRole",
+      "title": "invalid role=... value",
+      "description": "The element uses an invalid abstract role=... like role=command, role=widget or similar. Authors must not use these abstract roles in their markup.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 343,
+      "engineKey": "ARC",
+      "assertionKey": "visibleLabelWithHiddenInput",
+      "title": "label referencing hidden input",
+      "description": "The label element is referencing a hidden input. Activating/clicking the label results in focus being moved to this hidden input.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 344,
+      "engineKey": "ARC",
+      "assertionKey": "visibleModalSiblings",
+      "title": "content underneath modal dialog still exposed",
+      "description": "The content behind the modal dialog is not programmatically hidden from assistive technologies (e.g. using aria-hidden=true). It is still possible for assistive technology users to navigate to the content - for instance, by navigating by headings.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.2 Meaningful Sequence"
+      ]
+    },
+    {
+      "id": 345,
+      "engineKey": "ARC",
+      "assertionKey": "zoomingDisabled",
+      "title": "zooming disabled",
+      "description": "The page includes meta name=viewport content=... directives that try to prevent the page from being resized/zoomed in mobile and tablet browsers. While most modern browsers ignore these directives, or allow users to at least override them, this can still prevent low-vision users from being able to appropriately resize text/content, particularly on older devices/browsers.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.4.4 Resize text"
+      ]
+    },
+    {
+      "id": 346,
+      "engineKey": "ARC",
+      "assertionKey": "1x1ImageAltText",
+      "title": "1x1 image with alt attribute",
+      "description": "If small 1x1 img elements are used for visual layout or spacing, they should have an empty alt= attribute to denote them as purely decorative.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 347,
+      "engineKey": "ARC",
+      "assertionKey": "accessKeyUsed",
+      "title": "accesskey used",
+      "description": "The page defines one or more accesskey=... attributes. Access keys are not consistently supported across all browsers and platforms, and additional software, such as assistive technologies, may override or otherwise interfere with their use. Ensure that the site does not rely on the users' ability to trigger these access keys.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 348,
+      "engineKey": "ARC",
+      "assertionKey": "applicationFoundInbody",
+      "title": "role=application on body",
+      "description": "role=application was found on the page's body element. This can override standard behavior and keyboard interaction in assistive technologies, particularly on Windows. Ensure that it is required and that the document remains fully usable/operable by assistive technology users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 349,
+      "engineKey": "ARC",
+      "assertionKey": "ariaExpandedOnInvalidRole",
+      "title": "control with inappropriate aria-expanded",
+      "description": "The aria-expanded=... attribute is only allowed on particular controls / elements with a particular role=.... In general, it is used on the control that triggers the expand/collapse behavior, and not on the content that is expanded/collapsed.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 350,
+      "engineKey": "ARC",
+      "assertionKey": "ARIAHiddenUsed",
+      "title": "aria-hidden used",
+      "description": "An element is hidden from assistive technologies using aria-hidden=true. Verify that it's appropriate to hide this content from assistive technology users, and that its content/purpose is conveyed in an alternative way.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 351,
+      "engineKey": "ARC",
+      "assertionKey": "ARIAHiddenUsedOnFocusable",
+      "title": "aria-hidden used on focusable element",
+      "description": "aria-hidden=true is used on a focusable element. Assistive technology users that navigate to / focus on this element will not be able to determine what their focus is currently on.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 352,
+      "engineKey": "ARC",
+      "assertionKey": "ARIAHiddenUsedOnParentOfFocusable",
+      "title": "aria-hidden used on parent of focusable element",
+      "description": "aria-hidden=true is used on an element that contains one or more focusable child elements. Assistive technology users that navigate to / focus on these child elements will not be able to determine what their focus is currently on.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 353,
+      "engineKey": "ARC",
+      "assertionKey": "ariaLabelOnInputImage",
+      "title": "aria-label/aria-labelledby on image button",
+      "description": "aria-label=... or aria-labelledby=... found on an image button which lacks an alt=... attribute.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 354,
+      "engineKey": "ARC",
+      "assertionKey": "ariaLevelOnHeading",
+      "title": "aria-level specified on HTML heading",
+      "description": "HTML heading element with an explicit aria-level=... attribute. This can complicate how some assistive technologies identify the heading level of the element.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 355,
+      "engineKey": "ARC",
+      "assertionKey": "badLongdestTarget",
+      "title": "invalid/incorrect longdesc attribute",
+      "description": "The longdesc=... attribute on the image does not contain a valid URL. Most likely, an actual long description has erroneously been included directly in the attribute.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 356,
+      "engineKey": "ARC",
+      "assertionKey": "checkIfLinkTextNeeded",
+      "title": "links without link text",
+      "description": "The link provides no discernible link text. Ensure that appropriate text is provided.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 357,
+      "engineKey": "ARC",
+      "assertionKey": "dlUsed",
+      "title": "dl definition list used",
+      "description": "The page uses a dl definition list. Note that currently, some assistive technologies will announce these as unordered lists, rather than exposing the semantic relationship between the dt and relevant dd element(s).",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 358,
+      "engineKey": "ARC",
+      "assertionKey": "duplicateHeaders",
+      "title": "multiple headings with same text/content",
+      "description": "There are multiple headings with the same text/content. This may indicate that the headings are not sufficiently descriptive. Ensure that headings all have appropriate text/content that accurately describes the content they refer to.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.6 Headings and Labels"
+      ]
+    },
+    {
+      "id": 359,
+      "engineKey": "ARC",
+      "assertionKey": "emptyList",
+      "title": "empty list without list items",
+      "description": "Found an ol ordered list or ul unordered list that contains no list items. The presence of the list will generally still be announced by assistive technologies, making the page structure potentially confusing or unnecessarily verbose for users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 360,
+      "engineKey": "ARC",
+      "assertionKey": "emptyListItem",
+      "title": "list with empty li list items",
+      "description": "When a list contains empty li/li elements, these will still be counted and announced by assistive technologies, leading to a potentially confusing experience for users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 361,
+      "engineKey": "ARC",
+      "assertionKey": "framesetHasTitle",
+      "title": "frameset with title attribute",
+      "description": "frameset found with a title=... attribute. Titles should be set on the individual frame elements instead.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 362,
+      "engineKey": "ARC",
+      "assertionKey": "h1InHeader",
+      "title": "h1 in page header",
+      "description": "An h1 heading is present in the page's header. This may make it more difficult for assistive technology users to quickly locate the main content of the page, if they assume that it will start with an h1.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 363,
+      "engineKey": "ARC",
+      "assertionKey": "headingLevelMismatch",
+      "title": "aria-level doesn't match element's heading level",
+      "description": "HTML heading element with an aria-level=... which does not match the level specified in the markup.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 364,
+      "engineKey": "ARC",
+      "assertionKey": "headingLevelSkipped",
+      "title": "heading level skipped",
+      "description": "One or more heading levels were skipped or used out of order. While not a failure, assistive technology users may find the page structure confusing, inaccurate or hard to navigate.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 365,
+      "engineKey": "ARC",
+      "assertionKey": "imgWithPresentationRole",
+      "title": "img with presentation role",
+      "description": "img element with an unnecessary role-presentation or role=none attribute.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 366,
+      "engineKey": "ARC",
+      "assertionKey": "inputTypeIsEmail",
+      "title": "input with type=email",
+      "description": "The page uses input type=email. HTML form field validation is not fully supported by all assistive technology and browser combinations. Ensure that validation messages/errors are correctly exposed.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 367,
+      "engineKey": "ARC",
+      "assertionKey": "labelTextVisibleTextMismatch",
+      "title": "accessible name does not match visible label",
+      "description": "The accessible name of the control (which is exposed to assistive technologies) does not match the visible label of the control. Voice control users will find it more difficult to activate the control, as they won't be able to focus/target it by simply using its visible label.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 368,
+      "engineKey": "ARC",
+      "assertionKey": "legendNotFirstChild",
+      "title": "legend not first child of fieldset",
+      "description": "To conform with the HTML specification, legend (if present) must be the first child element of a fieldset.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 369,
+      "engineKey": "ARC",
+      "assertionKey": "lineBreakUsed",
+      "title": "br line break used",
+      "description": "br element is used to create visual line breaks. This may indicate that content is not correctly marked up / semantically structured. Ensure that appropriate structural markup is used.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 370,
+      "engineKey": "ARC",
+      "assertionKey": "linkTextContainsClick",
+      "title": "link with \"click\" in link text",
+      "description": "Links text should be sufficiently descriptive. One or more links found simply use \"click\", which may indicate that their link text is not descriptive enough.This can be confusing for assistive technology users who navigate by links, as it is not immediately obvious what the purpose of a link is. In addition, this is unnecessarily verbose and redundant - users are aware that links are activated by \"clicking\".",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 371,
+      "engineKey": "ARC",
+      "assertionKey": "linkTextMayNotBeDescriptive",
+      "title": "link may not be sufficiently descriptive",
+      "description": "Links text should be sufficiently descriptive. Ensure that the link text here is sufficiently descriptive of the target/purpose of the link.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 372,
+      "engineKey": "ARC",
+      "assertionKey": "missingBypassMethods",
+      "title": "missing bypass methods",
+      "description": "The page appears to be missing common methods used to bypass blocks of content, such as as \"skip to main content\" link. Ensure that either this is not necessary (for instance, if the page is simple and does not contain large blocks of repeating content, like an extensive navigation) or that some alternative method of allowing users to bypass large blocks of content has been used.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 373,
+      "engineKey": "ARC",
+      "assertionKey": "missingHREF",
+      "title": "a without href=...",
+      "description": "When an a element is used without an href=... attribute, it acts as an anchor rather than a link. By default, anchors are not keyboard-focusable. In general, in-page links in modern development make use of/target ids of elements, rather than adding explicit anchors. Ensure that the a elements are used only as anchors, and not for interactive controls - in the latter case, ensure that they are keyboard focusable (e.g. using tabindex=0) or replace them with more appropriate elements like button.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 374,
+      "engineKey": "ARC",
+      "assertionKey": "multipleFooterLandmarks",
+      "title": "multiple footer landmarks",
+      "description": "The page contains two or more ARIA role=contentinfo landmarks or HTML footer elements. Ensure that the landmark structure of the page is correct.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 375,
+      "engineKey": "ARC",
+      "assertionKey": "multipleH1",
+      "title": "multiple h1 headings",
+      "description": "There are multiple h1 heading elements on the page.  While not a failure, assistive technology users may find it confusing if they expected only one h1 for the main content of the page.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 376,
+      "engineKey": "ARC",
+      "assertionKey": "multipleHeaderLandmarks",
+      "title": "multiple header landmarks",
+      "description": "The page contains two or more ARIA role=banner landmarks or HTML header elements. Ensure that the landmark structure of the page is correct.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 377,
+      "engineKey": "ARC",
+      "assertionKey": "multipleLabellingTechniquesUsed",
+      "title": "form control with multiple labels",
+      "description": "Multiple labeling techniques are used for a form control. These may not be exposed correctly by assistive technologies. Ensure that the controls are announced correctly.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 378,
+      "engineKey": "ARC",
+      "assertionKey": "nestedListNotNestedCorrectly",
+      "title": "incorrectly nested list",
+      "description": "The list includes an incorrectly nested list. A nested ul unordered list or ol ordered list must be wrapped in an li of the parent list.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 379,
+      "engineKey": "ARC",
+      "assertionKey": "nestingFormLabelMissingId",
+      "title": "implicitly labelled form controls",
+      "description": "The checkbox/radio button form fields with visible text labels are associated with the text label by wrapping the label around the form field. Some assistive technologies, such as Dragon Naturally Speaking, may not be able to correctly associate text labels and form fields where nesting is the only way the label is associated with the form field. This is an assistive technology bug, rather than a failure on the part of the author - however, we'd recommend reviewing this.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 380,
+      "engineKey": "ARC",
+      "assertionKey": "noLegend",
+      "title": "fieldset without legend",
+      "description": "Encountered a fieldset without a legend. Ensure that an appropriate alternative group label (such as aria-label=... on the fieldset) is present.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 381,
+      "engineKey": "ARC",
+      "assertionKey": "noMainLandmark",
+      "title": "no main landmark",
+      "description": "The page does not explicitly identify the main content using ARIA role=main or the HTML main element, which aid assistive technology users in finding the primary content of the page more easily.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 382,
+      "engineKey": "ARC",
+      "assertionKey": "noNavLandmark",
+      "title": "no navigation landmark",
+      "description": "The page does not explicitly identify the main content using ARIA role=nav or the HTML nav element, which aid assistive technology users in finding the navigation of the page more easily.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.1 Bypass Blocks"
+      ]
+    },
+    {
+      "id": 383,
+      "engineKey": "ARC",
+      "assertionKey": "nonDescriptiveLinkText",
+      "title": "insufficiently descriptive link text",
+      "description": "Links text should be sufficiently descriptive. One or more links found simply use \"click here\" or \"here\", which may indicate that their link text is not descriptive enough.This can be confusing for assistive technology users who navigate by links, as it is not immediately obvious what the purpose of a link is.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 384,
+      "engineKey": "ARC",
+      "assertionKey": "nonLayoutTableHasNestedTable",
+      "title": "layout table with data table attributes/structures",
+      "description": "Tables that are used for layout should not contain data table attributes and structures such as thead, summary=..., and colgroup.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 385,
+      "engineKey": "ARC",
+      "assertionKey": "nonListItemChildOfList",
+      "title": "list with invalid child elements",
+      "description": "An element other than an li list item was found as the first child element of a list. This is invalid markup and may result in the list not being correctly exposed to assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 386,
+      "engineKey": "ARC",
+      "assertionKey": "onlyOneListItem",
+      "title": "list with only one list item",
+      "description": "Found an ol ordered list or ul unordered list that contains only a single list items. Ensure that this structure is logical (for instance, if there are situations where this list may contain more than one item), as otherwise this structure may be unnecessary and potentially confusing for users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 387,
+      "engineKey": "ARC",
+      "assertionKey": "orphanedLabelNoMatchingIDAttribute",
+      "title": "label pointing to non-existent id",
+      "description": "The label for=... attribute points to a non-existent id value. The label is either unnecessary, or not correctly associated with the form control it is intended to provide a label for.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 388,
+      "engineKey": "ARC",
+      "assertionKey": "placeholderDoesNotMatchLabel",
+      "title": "placeholder doesn't match label",
+      "description": "placeholder text used on a form control doesn't match the control's visual label text. This may cause confusion for screen reader users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.6 Headings and Labels"
+      ]
+    },
+    {
+      "id": 389,
+      "engineKey": "ARC",
+      "assertionKey": "possibleHTMLInTitle",
+      "title": "possible HTML in title",
+      "description": "The HTML title element contains HTML markup. This is invalid, and the markup will be read literally by assistive technologies (e.g. \"lower than, p, greater than ...\" for a p), which will be confusing for assistive technology users and will not adequately describe the purpose of the page.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.2 Page Titled"
+      ]
+    },
+    {
+      "id": 390,
+      "engineKey": "ARC",
+      "assertionKey": "problematicLinkText",
+      "title": "img with verbose alt=... attribute",
+      "description": "img with an alt=... attribute that contains the image type or identifies the image as a graphic element (words such as \"icon\", \"jpeg\", \"thumbnail\", or similar). Images are already identified by assistive technology as graphic elements. Providing this additional information causes redundancy and increases the auditory load of the page for screen reader users.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 391,
+      "engineKey": "ARC",
+      "assertionKey": "requiredIsIndicatedByHTML5Attribute",
+      "title": "form field with required attribute",
+      "description": "A form control uses the HTML required attribute. HTML form field validation is not fully supported by all assistive technology and browser combinations. Ensure that validation messages/errors are correctly exposed.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 392,
+      "engineKey": "ARC",
+      "assertionKey": "SVGFocusable",
+      "title": "svg element focusable",
+      "description": "By default, Internet Explorer makes svg elements focusable, even when they are not interactive. This results in an empty/meaningless tab stop for keyboard users. When the svg is used in an active element, the element will have two tabs stops.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.1.1 Keyboard"
+      ]
+    },
+    {
+      "id": 393,
+      "engineKey": "ARC",
+      "assertionKey": "titleOnLink",
+      "title": "redundant title on link",
+      "description": "The link text and the title=... attribute contain the same text. While not a failure, this makes links unnecessarily verbose to assistive technology users, who may hear the same text repeated twice.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 2.4.4 Link Purpose (In Context)"
+      ]
+    },
+    {
+      "id": 394,
+      "engineKey": "ARC",
+      "assertionKey": "unknownTablePurpose",
+      "title": "table potentially used for layout",
+      "description": "It was not possible to determine if the table is used for tabular data or layout. If it's the latter, ensure that role=presentation is set on the table (so assistive technologies don't announce unnecessary table semantics like numbers of rows/columns), and consider changing to a CSS based layout and structure instead.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 395,
+      "engineKey": "ARC",
+      "assertionKey": "verifyDefaultBrowserText",
+      "title": "default control names",
+      "description": "No specific label / accessible name has been specified for the form control (e.g. input type=submit wthout an explicit value=...). This may not always be appropriate or make sense  or provide sufficient information in the context of a form.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.2 Labels or Instructions"
+      ]
+    },
+    {
+      "id": 396,
+      "engineKey": "ARC",
+      "assertionKey": "titleOnNonActiveElement",
+      "title": "non-interactive element with title",
+      "description": "A non-interactive/content element has a title=... attribute. This is not consistently exposed by browsers / announced by assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.3.2 Labels or Instructions"
+      ]
+    },
+    {
+      "id": 397,
+      "engineKey": "ARC",
+      "assertionKey": "boldUsed",
+      "title": "text formatted with b",
+      "description": "Text is formatted using the presentational b element. If this visual presentation is intended to convey structural/semantic meaning, it is currently not exposed to users of assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 398,
+      "engineKey": "ARC",
+      "assertionKey": "doesNotUsePUA",
+      "title": "possible problematic icon font use",
+      "description": "The page uses individual characters, likely in combination with an icon font, which are not in the unicode Private Use Area range. As a result, assistive technologies will attempt to announce the character, which can lead to incomprehensible/nonsensical output. Additionally, if the characters convey meaning, ensure that a text alternative is also provided.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 399,
+      "engineKey": "ARC",
+      "assertionKey": "invalidARIADescribedbyID",
+      "title": "aria-describedby pointing to non-existent id",
+      "description": "The element uses aria-describedby=..., but the attribute is referencing a non-existent id. As a result, it is likely that the defined relationship is incorrect.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.2 Name, Role, Value"
+      ]
+    },
+    {
+      "id": 400,
+      "engineKey": "ARC",
+      "assertionKey": "italicUsed",
+      "title": "text formatted with i",
+      "description": "Text is formatted using the presentational i element. If this visual presentation is intended to convey structural/semantic meaning, it is currently not exposed to users of assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    },
+    {
+      "id": 401,
+      "engineKey": "ARC",
+      "assertionKey": "nonPUAContentInSameTextElement",
+      "title": "possible problematic icon font use",
+      "description": "The page uses CSS generated content: ... characters, likely in combination with an icon font, which are not in the unicode Private Use Area range. As a result, assistive technologies will attempt to announce the characters, which can lead to incomprehensible/nonsensical output. Additionally, if the generated content conveys meaning, ensure that a text alternative is also provided.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 402,
+      "engineKey": "ARC",
+      "assertionKey": "nonPUAContentOnActiveElement",
+      "title": "possible problematic icon font use",
+      "description": "The control uses CSS generated content: ... characters, likely in combination with an icon font, which are not in the unicode Private Use Area range. As a result, assistive technologies will attempt to announce the characters, which can lead to incomprehensible/nonsensical output. Additionally, if the generated content conveys meaning, ensure that a text alternative is also provided. In the case of controls, ensure that an alternative way to provide an accessible name is present.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 403,
+      "engineKey": "ARC",
+      "assertionKey": "nonPUAContentOnNonActiveElement",
+      "title": "possible problematic icon font use",
+      "description": "The page uses CSS generated content: ... characters, likely in combination with an icon font, which are not in the unicode Private Use Area range. As a result, assistive technologies will attempt to announce the characters, which can lead to incomprehensible/nonsensical output. Additionally, if the generated content conveys meaning, ensure that a text alternative is also provided.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 404,
+      "engineKey": "ARC",
+      "assertionKey": "periodPseudoContent",
+      "title": "possible problematic CSS content use",
+      "description": "The page uses CSS generated content: ... characters to inject . periods, likely in combination with an icon font, which are not in the unicode Private Use Area range. As a result, assistive technologies will attempt to announce the characters, which can lead to incomprehensible/nonsensical output. Additionally, if the generated content conveys meaning, ensure that a text alternative is also provided.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 405,
+      "engineKey": "ARC",
+      "assertionKey": "pseudoContentActiveNotHidden",
+      "title": "control with only CSS generated content",
+      "description": "The control only uses CSS generated content: ..., likely in combination with an icon font, with no alternative (such as visually hidden text, or an aria-label=...). As a result, the control lacks an appropriate accessible name.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 406,
+      "engineKey": "ARC",
+      "assertionKey": "pseudoContentCheckForAlternativeText",
+      "title": "CSS generated content alternatives",
+      "description": "The page uses CSS generated content: ..., which may indicate the use of an icon font. If this is the case, ensure that there is an appropriate text alternative for users who cannot perceive the icon.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 407,
+      "engineKey": "ARC",
+      "assertionKey": "pseudoContentNonActiveNotHidden",
+      "title": "CSS generated content not hidden",
+      "description": "The page uses CSS generated content: ..., which may indicate the use of an icon font. However, the generated content is not hidden from assistive technologies. Depending on which characters/symbols are being used, this may result in an incomprehensible/illogical output, as the generated characters are being announced by assistive technologies,.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 408,
+      "engineKey": "ARC",
+      "assertionKey": "pseudoContentUsingURL",
+      "title": "CSS generated content image",
+      "description": "An image was inserted with the CSS content: ... property. Some browser/assistive technology combinations will announce the inserted content as \"image\", with no text alternative.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 409,
+      "engineKey": "ARC",
+      "assertionKey": "specialCharactersUsed",
+      "title": "special text characters",
+      "description": "The page contains non-alphanumeric / special characters as part of its text content. This may indicate the presence of ASCII art, or characters used purely for their visual appearance as symbols/icons. Ensure that these characters are correctly conveyed to assistive technologies and/or provide an alternative text conveying their meaning/purpose.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 410,
+      "engineKey": "ARC",
+      "assertionKey": "strikeThroughUsed",
+      "title": "text formatted with s",
+      "description": "Text is formatted using the presentational s strikethrough element. If this visual presentation is intended to convey structural/semantic meaning, it is currently not exposed to users of assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.3 Sensory Characteristics"
+      ]
+    },
+    {
+      "id": 411,
+      "engineKey": "ARC",
+      "assertionKey": "underlineUsed",
+      "title": "text formatted with u",
+      "description": "Text is formatted using the presentational u underline element. If this visual presentation is intended to convey structural/semantic meaning, it is currently not exposed to users of assistive technologies.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.3 Sensory Characteristics"
+      ]
+    },
+    {
+      "id": 471,
+      "engineKey": "ARC",
+      "assertionKey": "imageMapMissingAlt",
+      "title": "image map with missing or empty alt",
+      "description": "The client-side image map has an empty or missing alt=... attribute. The meaning/purpose of the image won't be conveyed to users who can't see the image, including users of assistive technologies.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.1.1 Non-text Content"
+      ]
+    },
+    {
+      "id": 472,
+      "engineKey": "ARC",
+      "assertionKey": "autocompleteMissing",
+      "title": "missing autocomplete attribute or value",
+      "description": "The form control is missing an autocomplete=... attribute or value. The purpose of the control won't be programmatically determinable. This is a failure if the control is used to collect information about the user.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.5 Identify Input Purpose"
+      ]
+    },
+    {
+      "id": 473,
+      "engineKey": "ARC",
+      "assertionKey": "autocompleteOnInvalidControl",
+      "title": "form control with inappropriate autocomplete",
+      "description": "The form control has an autocomplete=... attribute, but it doesn't make sense/is invalid on this type of control.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.5 Identify Input Purpose"
+      ]
+    },
+    {
+      "id": 474,
+      "engineKey": "ARC",
+      "assertionKey": "autocompleteValueIsInvalid",
+      "title": "form control with invalid autocomplete value",
+      "description": "The form control has an autocomplete=... attribute with an invalid value. The correct purpose of the control won't be programmatically determinable. . This is a failure if the control is used to collect information about the user.",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.5 Identify Input Purpose"
+      ]
+    },
+    {
+      "id": 475,
+      "engineKey": "ARC",
+      "assertionKey": "duplicateIdUsed",
+      "title": "attribute pointing to duplicate id",
+      "description": "There are multiple id attributes with the same value, and this value is being referenced by another element (for instance, by a headers=... attribute in a table cell, or an ARIA attribute like aria-controls, aria-labelledby or aria-errormessage). As a result, it is likely that the defined relationship is incorrect.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 476,
+      "engineKey": "ARC",
+      "assertionKey": "duplicateIdFound",
+      "title": "duplicate id attributes",
+      "description": "The id attribute values used on the page must be unique. Having duplicate id values can lead to problems when other elements reference that id value (e.g. to establish an aria-labelledby=... reference on a form control).",
+      "categoryId": 2,
+      "category": "Alerts",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 477,
+      "engineKey": "ARC",
+      "assertionKey": "missingId",
+      "title": "attribute pointing to non-existent id",
+      "description": "A relationship attribute (such as label for=..., or an ARIA attribute such as aria-controls=...) is pointing to a non-existent id. As a result, it is likely that the defined relationship is incorrect.",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 4.1.1 Parsing"
+      ]
+    },
+    {
+      "id": 554,
+      "engineKey": "ARC",
+      "assertionKey": "invalidLanguageSpecified",
+      "title": "invalidLanguageSpecified",
+      "description": "You must use a valid ISO Language Code",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.1.2 Language of Parts"
+      ]
+    },
+    {
+      "id": 555,
+      "engineKey": "ARC",
+      "assertionKey": "invalidDocumentLanguageSpecified",
+      "title": "invalidDocumentLanguageSpecified",
+      "description": "You must use a valid ISO Language Code",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": true,
+      "checkpoint": [
+        "[WCAG 2.1] - 3.1.1 Language of Page"
+      ]
+    },
+    {
+      "id": 556,
+      "engineKey": "ARC",
+      "assertionKey": "ariaIncorrectParentRole",
+      "title": "ariaIncorrectParentRole",
+      "description": "Ensure the element parent has the required role",
+      "categoryId": 1,
+      "category": "Errors",
+      "active": false,
+      "checkpoint": [
+        "[WCAG 2.1] - 1.3.1 Info and Relationships"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "request": "/v1/Domains/2945/ARC/History",
+  "statusCode": "SUCCESS",
+  "statusMessage": "",
+  "arcAccountCode": "e6e68581-d22a-4b0d-af5f-2b380b805430",
+  "result": {
+    "history": [
+      {
+        "id": 2945,
+        "url": "https://designsystem.gov.scot",
+        "scanlogId": 29467,
+        "scanDate": "2021-06-14T09:47:54.153",
+        "engineId": 5,
+        "engineKey": "ARC",
+        "assertionCount": 425,
+        "checkpointFailures": 425,
+        "contrast": 363
+      },
+      {
+        "id": 2945,
+        "url": "https://designsystem.gov.scot",
+        "scanlogId": 29464,
+        "scanDate": "2021-06-14T08:24:08.57",
+        "engineId": 5,
+        "engineKey": "ARC",
+        "assertionCount": 393,
+        "checkpointFailures": 393,
+        "contrast": 363
+      },
+      {
+        "id": 2945,
+        "url": "https://designsystem.gov.scot",
+        "scanlogId": 28977,
+        "scanDate": "2021-06-08T15:26:55.187",
+        "engineId": 5,
+        "engineKey": "ARC",
+        "assertionCount": 505,
+        "checkpointFailures": 505,
+        "contrast": 7120
+      },
+      {
+        "id": 2945,
+        "url": "https://designsystem.gov.scot",
+        "scanlogId": 28976,
+        "scanDate": "2021-06-08T15:13:02.377",
+        "engineId": 5,
+        "engineKey": "ARC",
+        "assertionCount": 262,
+        "checkpointFailures": 262,
+        "contrast": 363
+      },
+      {
+        "id": 2945,
+        "url": "https://designsystem.gov.scot",
+        "scanlogId": 28974,
+        "scanDate": "2021-06-08T15:06:15",
+        "engineId": 5,
+        "engineKey": "ARC",
+        "assertionCount": 71,
+        "checkpointFailures": 71,
+        "contrast": 329
+      }
+    ],
+    "id": 2945,
+    "title": "Design system",
+    "description": "The design system site",
+    "url": "https://designsystem.gov.scot",
+    "created": "06/08/2021",
+    "active": true
+  }
+}

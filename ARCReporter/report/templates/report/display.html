@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+    {% block title %}
+        {{ siteName }} – Accessibility Report
+    {% endblock %}
+
+    {% block header %}
+        <h1> {{ siteName }} – Accessibility Report </h1><br>
+        {{ hash }}
+     {% endblock %}
+
+        {% block sidebar %}
+            <div class="container-fluid">
+                <a href="#introduction" class="text"> Introduction</a> <br>
+                <a href="#summary" class="text"> Summary </a> <br>
+                <a href="#topWCAG" class="text">Top WCAG Failures</a> <br>
+                <a href="#topAsserts" class="text">Top Assertion Failures</a> <br>
+                <a href="#priorityPages" class="text">Priority Pages</a> <br>
+                <a href="#topPages" class="text">Top Failing Pages</a> <br>
+                <a href="#topFailures" class="text">Top Failures</a> <br>
+
+            </div>
+        {%  endblock %}
+
+    {% block table %}
+        <a id="introduction">
+        <h3>Scan performed on {{ date|slice:":10" }} - {{ date|slice:"12:19" }}</h3>
+        <h1>Introduction</h1>
+        <p>
+            This accessibility highlight report aims to outline the key areas of accessibility concern on<br>
+            <a href={{ url }}>{{ url }}</a> This report is created using information gathered using the <br>ARC platform
+            which evaluates the accessibility of webpages. <br><br>
+
+             <a href={{ url }}>{{ url }}</a>'s first {{ totalPages }} URLs were scanned using the ARC accessibility ruleset.<br>
+            The URLs were identified by ARC’s depth-breadth search, initiated from the home page.<br>
+            The issues uncovered by the scan are summarized in this report.<br><br>
+
+            The purpose of this report is to highlight the main areas of accessibility concern on the scanned webpages.<br>
+            This report outlines the top five most affected pages and the top three issues on each of those five pages.<br><br>
+        </p>
+        </a>
+        <a id="summary">
+        <h1>Summary</h1>
+        <p>
+            Total number of pages scanned: {{ totalPages }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Failure Density: {{ densityScore }}<br>
+        </p>
+        <p>
+            Total number of errors: {{ totalCheckpointFails }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is: {{ densityRating }}<br>
+        </p>
+        <p>
+            Total number of errors: {{ totalContrastCount }}
+        </p>
+        </a>
+
+        <a id="topWCAG">
+        <h1>Top WCAG Failures</h1>
+
+        <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Success criteria</th>
+                    <th>Failure Count</th>
+                </tr>
+                {% for w in wcag|slice:":5" %}
+                    <tr>
+                        <td> {{ w.0 }}</td>
+                        <td> {{ w.1 }}</td>
+
+                    </tr>
+                {% endfor %}
+                </thead>
+            </table>
+        </a>
+        <br><br>
+
+        <a id="topAsserts">
+        <h1>Top Assertion Failures</h1>
+        <p>
+        <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Success criteria</th>
+                    <th>Failure Count</th>
+                </tr>
+                {% for a in assertions %}
+                    <tr>
+                        <td> {{ a.0 }}</td>
+                        <td> {{ a.1 }}</td>
+
+                    </tr>
+                {% endfor %}
+                </thead>
+
+            </table>
+        </p>
+        </a>
+        <br><br>
+        <a id="priorityPages">
+        <h1>Priority Pages</h1>
+        <h2>Page name</h2>
+
+        {% for pri in priorityUrls %}
+            <p>
+                URL: {{ pri.0 }}   <br>
+                Total number of errors: {{ pri.1 }}    <br>
+                Total number of alerts:  {{ pri.2 }}  <br>
+            </p> <br>
+        {% endfor %}
+
+        </a>
+
+        <a id="topPages">
+        <h1>Top Failing Pages</h1>
+        {% for fail in failingPages %}
+            <p>
+                URL: {{ fail.0 }}   <br>
+                Total number of errors: {{ fail.1 }}    <br>
+                Total number of alerts:  {{ fail.2 }}  <br>
+                Failure Density: {{ fail.1 }}
+            </p> <br>
+        {% endfor %}
+        </a>
+        <br>
+        <a id="topFailures">
+        <h1>Top Failures</h1>
+        {% for top in subtotals %}
+            <h4>{{ top.0 }}</h4>
+            <p>
+                Number of instances: {{ top.2 }}   <br>
+                WCAG Success Criteria {{ top.1 }}<br>
+                Description: {{ top.3|linebreaks }} <br>
+
+
+            </p> <br></a>
+        {% endfor %}
+
+    {% endblock %}

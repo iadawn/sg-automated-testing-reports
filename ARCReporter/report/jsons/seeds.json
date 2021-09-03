@@ -1,0 +1,11 @@
+{
+  "request": "/v1/Domains/2945/Seeds",
+  "statusCode": "SUCCESS",
+  "statusMessage": "",
+  "arcAccountCode": "e6e68581-d22a-4b0d-af5f-2b380b805430",
+  "result": [
+    {
+      "url": "https://designsystem.gov.scot"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{% extends 'inputBase.html' %}
+    {% block content %}
+
+    {% if user.is_authenticated %}
+        <br/>
+        <h2> Create Report</h2>
+        {% include 'messages.html' %}
+        <form method='post'>
+            {{ form.as_p}}
+            {% csrf_token %}
+            <a href="/" class="btn btn-link" >
+
+                Cancel</a>
+            <button type="submit" class="btn btn-primary" style="text-decoration-color: #333333">Enter</button>
+        </form>
+            {% else %}
+
+        <meta http-equiv="Refresh" content="0; url='login'" />
+    {% endif %}
+    {%  endblock %}
+
+

@@ -1,0 +1,88 @@
+{
+  "request": "/v1/Domains",
+  "statusCode": "SUCCESS",
+  "statusMessage": "",
+  "arcAccountCode": "e6e68581-d22a-4b0d-af5f-2b380b805430",
+  "result": [
+    {
+      "id": 3037,
+      "title": "World's least accessible page",
+      "description": "ARC meets the worlds least accessible page. How does it fair?!",
+      "url": "https://alphagov.github.io",
+      "created": "06/30/2021",
+      "active": true
+    },
+    {
+      "id": 2945,
+      "title": "Design system",
+      "description": "The design system site",
+      "url": "https://designsystem.gov.scot",
+      "created": "06/08/2021",
+      "active": true
+    },
+    {
+      "id": 2923,
+      "title": "Drugs death task force",
+      "description": "Information site for the Drugs death task force policy team",
+      "url": "https://drugdeathstaskforce.scot",
+      "created": "06/02/2021",
+      "active": true
+    },
+    {
+      "id": 2727,
+      "title": "Revenue Scotland",
+      "description": "Revenue Scotland main site",
+      "url": "https://revenue.scot",
+      "created": "04/28/2021",
+      "active": true
+    },
+    {
+      "id": 2616,
+      "title": "The Scottish Government ",
+      "description": "The Scottish Government ",
+      "url": "https://www.gov.scot",
+      "created": "04/07/2021",
+      "active": true
+    },
+    {
+      "id": 2617,
+      "title": "My Gov Scotland",
+      "description": "mygov.scot\r\n",
+      "url": "https://www.mygov.scot",
+      "created": "04/07/2021",
+      "active": true
+    },
+    {
+      "id": 2804,
+      "title": "Scotland.org",
+      "description": "Scotland.org",
+      "url": "https://www.scotland.org",
+      "created": "05/12/2021",
+      "active": true
+    },
+    {
+      "id": 2857,
+      "title": "Superfast Broadband",
+      "description": "Website for Superfast Broadband programme",
+      "url": "https://www.scotlandsuperfast.com",
+      "created": "05/21/2021",
+      "active": true
+    },
+    {
+      "id": 2805,
+      "title": "Screen Scotland",
+      "description": "Creative Scotland subsite concerned with film and tv in Scotland",
+      "url": "https://www.screen.scot",
+      "created": "05/12/2021",
+      "active": true
+    },
+    {
+      "id": 2958,
+      "title": "Social Security Scotland",
+      "description": "Social Security Scotland Corporate Site",
+      "url": "https://www.socialsecurity.gov.scot",
+      "created": "06/11/2021",
+      "active": true
+    }
+  ]
+}
