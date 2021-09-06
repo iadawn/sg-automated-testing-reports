@@ -1,0 +1,10 @@
+In /ARCReporter/ run 'pip install -r requirements.txt'
+
+in 'redis-stable' folder run 'redis-server' to open cache server
+
+in 'ARCReporter' folder: 'python3 manage.py runserver' or 'heroku local'
+
+python manage.py createsuperuser to create new accounts with admin prevelidges
+
+The local url that the app has deployed to should appear in your commandline, for example with 'python3 manage.py runserver' it will deploy to "127.0.0.1" in order to access the admin backend go to url/admin e.g. "127.0.0.1/admin"
+
